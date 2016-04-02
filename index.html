@@ -51,7 +51,11 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+
+                <ul class="nav navbar-nav navbar">
+                    <li class="logo-wrap invis">
+                      <a class="logo" href="#page-top"></a>
+                    </li>
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -59,16 +63,16 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#portfolio">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
-                    <li>
+                    <li class="contact-li">
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="btn-wrap invis">
+                        <a class="page-scroll btn-nav" href="#contact">Hire Us</a>
                     </li>
                 </ul>
             </div>
@@ -81,9 +85,11 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Team!</div>
-                <div class="intro-heading">COZY Team</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="integraly-logo"></div>
+                <p class="text-small">
+                  We create web and mobile apps
+                </p>
+                <a href="#services" class="page-scroll btn btn-xl hire-us">Hire Us</a>
             </div>
         </div>
     </header>
@@ -139,6 +145,15 @@
                     <div class="portfolio-caption">
                         <h4>Audiko</h4>
                         <p class="text-muted">Ringtone Service</p>
+                        <div class="tags">
+                          <p class="tag">UI/UX</p>
+                          <p class="tag">Android</p>
+                          <p class="tag">Ios</p>
+                          <p class="tag">Html</p>
+                          <p class="tag">Sass</p>
+                          <p class="tag">Marketing</p>
+                          <p class="tag">Product development</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -146,6 +161,15 @@
                     <div class="portfolio-caption">
                         <h4>Hi App</h4>
                         <p class="text-muted">Say "Hi" when you nearby</p>
+                        <div class="tags">
+                          <p class="tag">UI/UX</p>
+                          <p class="tag">Android</p>
+                          <p class="tag">Ios</p>
+                          <p class="tag">Html</p>
+                          <p class="tag">Sass</p>
+                          <p class="tag">Marketing</p>
+                          <p class="tag">Product development</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -153,6 +177,16 @@
                     <div class="portfolio-caption">
                         <h4>SongRocks</h4>
                         <p class="text-muted">Guess the song</p>
+                        <div class="tags">
+                          <p class="tag">UI/UX</p>
+                          <p class="tag">Android</p>
+                          <p class="tag">Ios</p>
+                          <p class="tag">Html</p>
+                          <p class="tag">Sass</p>
+                          <p class="tag">Marketing</p>
+                          <p class="tag">Product development</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +194,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <!-- <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -178,7 +212,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
@@ -189,79 +223,68 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
                         <h4>Dmytro Lola</h4>
                         <p class="text-muted">Produt Manager</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/dmytro-lola-a3140749"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/dmytro-lola-a3140749"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
                         <h4>Alexander Abarzhy</h4>
                         <p class="text-muted">Lead Android Developer, Tech Lead</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/alexander-abarzhi-97813717"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/alexander-abarzhi-97813717"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
                         <h4>Anton Tikhonov</h4>
                         <p class="text-muted">Lead iOS Developer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/anton-tikhonov-02733426"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/anton-tikhonov-02733426"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/4.jpg" class="img-responsive img-circle" alt="">
                         <h4>Cheslav Novytskiy</h4>
                         <p class="text-muted">JavaScript Developer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/cheslav-novytskiy-77b372a1"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/cheslav-novytskiy-77b372a1"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/5.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Edik Moiseenkov</h4>
-                        <p class="text-muted">JavaScript Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/edik-moiseenkov-28976351"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/6.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sergey Zhbanov</h4>
                         <p class="text-muted">Quality Assurance Engineer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/sergey-zhbanov-099b8365"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/sergey-zhbanov-099b8365"></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="team-member">
                         <img src="img/team/7.jpg" class="img-responsive img-circle" alt="">
                         <h4>Nikita-August Yakimenko</h4>
                         <p class="text-muted">UI/UX Designer</p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.linkedin.com/in/yakeem"><i class="fa fa-linkedin"></i></a>
+                            <li><a href="https://www.linkedin.com/in/yakeem"></a>
                             </li>
                         </ul>
                     </div>
