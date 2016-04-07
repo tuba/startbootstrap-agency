@@ -18,12 +18,12 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://integrale.com/submit",
+                url: "http://integraly.com/submit",
                 type: "POST",
                 data: {
                     name: name,
                     phone: phone,
-                    mail: email,
+                    email: email,
                     message: message
                 },
                 cache: false,
