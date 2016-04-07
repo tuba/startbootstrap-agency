@@ -5,8 +5,9 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'public/js/<%= pkg.name %>.min.js'
+                src: 'public/js/<%= pkg.name %>.js',
+                dest: 'public/js/<%= pkg.name %>.min.js',
+                dest: 'js/<%= pkg.name %>.min.js'
             }
         },
         less: {
@@ -15,7 +16,8 @@ module.exports = function(grunt) {
                     paths: ["public/css"]
                 },
                 files: {
-                    "public/css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less",
+                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
                 }
             },
             minified: {
@@ -24,7 +26,9 @@ module.exports = function(grunt) {
                     cleancss: true
                 },
                 files: {
-                    "public/css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less",
+                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+
                 }
             }
         },
@@ -40,7 +44,7 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['public/css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
                 }
             }
         },
