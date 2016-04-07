@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://integraly.com/submit",
+                url: "http://integraly.com:8181/submit",
                 type: "POST",
                 data: {
                     name: name,
