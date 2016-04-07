@@ -6,25 +6,25 @@ module.exports = function(grunt) {
         uglify: {
             main: {
                 src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                dest: 'public/js/<%= pkg.name %>.min.js'
             }
         },
         less: {
             expanded: {
                 options: {
-                    paths: ["css"]
+                    paths: ["public/css"]
                 },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
                 }
             },
             minified: {
                 options: {
-                    paths: ["css"],
+                    paths: ["public/css"],
                     cleancss: true
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "public/css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
                 }
             }
         },
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
+                files: ['public/js/<%= pkg.name %>.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn: false,
