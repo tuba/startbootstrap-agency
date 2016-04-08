@@ -260,6 +260,7 @@ fieldset[disabled] .btn-xl.active {
   .main-nav ul li {
     float: left;
     margin: 14px 5px;
+    clear: none;
   }
   .main-nav ul li a {
     text-decoration: none;
